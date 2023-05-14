@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cheap Flight Deals from Tel Aviv</title>
+    <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 id="header">Search for cheap deals from TLV</h1>
+    <div class="main-form">
+        <form id="my-form" onsubmit="handleSubmit()">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter destination code (e.g. NYC)" required>
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+            <!-- onsubmit enforces input validation ! -->
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
